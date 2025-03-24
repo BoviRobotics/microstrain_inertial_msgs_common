@@ -6,6 +6,9 @@
 #   header.frame_id is dependent on the full message definition. Most messages will not use this
 std_msgs/Header header
 
+# Adds a stamp to fix libstatistics_collector bug. This will be empty for now
+builtin_interfaces/Time stamp
+
 # If the message was triggered by an event, this will be set, otherwise it will be set to 0 (will be 0 most of the time)
 # For more information, see: https://s3.amazonaws.com/files.microstrain.com/CV7+Online/external_content/dcp/Data/shared_data/data/mip_field_shared_event_source.htm
 uint8 event_source
